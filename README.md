@@ -6,13 +6,13 @@
 
 [Paper](https://arxiv.org/abs/2507.19697) | [Dataset](https://huggingface.co/datasets/alrubyli/Covisit)
 
-## 📋 Abstract
+## Abstract
 
 Understanding where people go after visiting one business is crucial for urban planning, retail analytics, and location-based services. However, predicting these co-visitation patterns across millions of venues remains challenging due to extreme data sparsity and the complex interplay between spatial proximity and business relationships. We introduce **NAICS-aware GraphSAGE**, a novel graph neural network that integrates business taxonomy knowledge through learnable embeddings to predict population-scale co-visitation patterns.
 
 Our key insight is that business semantics—captured through detailed industry codes—provide crucial signals that pure spatial models cannot explain. The approach scales to massive datasets (4.2 billion potential venue pairs) through efficient state-wise decomposition while combining spatial, temporal, and socioeconomic features in an end-to-end framework.
 
-## 🔥 Key Contributions
+## Key Contributions
 
 1. **Methodological Innovation**: First end-to-end GNN framework that jointly embeds NAICS codes, temporal signals, and spatial relations for population-level co-visitation prediction through edge regression
 
@@ -25,7 +25,7 @@ Our key insight is that business semantics—captured through detailed industry 
    - 276 NAICS business categories
    - 38 socioeconomic indicators
 
-## 📊 Dataset: POI-Graph
+## Dataset: POI-Graph
 
 ### Overview
 POI-Graph is the first large-scale dataset specifically designed for co-visitation research, enabling reproducible advances in mobility modeling and urban analytics.
@@ -56,7 +56,7 @@ poi_graph/
 └── metadata/        # Brand information and mappings
 ```
 
-## 🛠️ Installation
+## Installation
 
 ### Requirements
 - Python 3.8+
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 python scripts/download_data.py --dataset poi-graph
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Training a Model
 
@@ -126,7 +126,7 @@ prediction = model.predict_covisit(
 print(f"Predicted co-visits: {prediction:.0f}")
 ```
 
-## 📈 Results
+## Results
 
 ### Performance Comparison
 
@@ -144,7 +144,7 @@ print(f"Predicted co-visits: {prediction:.0f}")
 - **Scalability**: Processes state-level graphs with 1.3M edges in under 2 hours
 - **Interpretability**: Learned embeddings cluster semantically similar businesses
 
-## 🔬 Reproducibility
+## Reproducibility
 
 ### Training Scripts
 
@@ -174,9 +174,7 @@ Complete training logs and experimental outputs are provided for full reproducib
 
 - `output.log` - Comprehensive training logs including hyperparameter settings, validation metrics, and convergence details for all experiments reported in the paper
 
-## 📖 Citation
-
-If you find this work useful, please cite our paper:
+## Citation
 
 <!-- ```bibtex
 @inproceedings{alrubyli2024naics,
@@ -207,13 +205,13 @@ If you find this work useful, please cite our paper:
 - [ ] Cross-city transfer learning
 - [ ] Integration with traffic data
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## Authors
 
-- **Yazeed Alrubyli** - *Università di Bologna* - [yazeednaif.alrubyli2@unibo.it](mailto:yazeednaif.alrubyli2@unibo.it)
+- **Yazeed Alrubyli** - *Università di Bologna*
 - **Omar Alomeir** - *Prince Sultan University*
 - **Abrar Wafa** - *Prince Sultan University*
 - **Diána Hidvégi** - *Intelmatix*
@@ -221,4 +219,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Mohsen Bahrami** - *Massachusetts Institute of Technology*
 ---
 
-For questions and feedback, please open an issue or contact the corresponding author. 
+For questions and feedback, please open an issue or contact the corresponding author [Yazeed Alrubyli](mailto:yazeednaif.alrubyli2@unibo.it). 
