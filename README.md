@@ -18,7 +18,7 @@ Our key insight is that business semantics—captured through detailed industry 
 
 2. **Strong Performance**: Achieves test R² of 0.625 (157% improvement over best baseline) with significant gains in ranking quality (32% improvement in NDCG@10)
 
-3. **Large-Scale Dataset**: We release **POI-Graph**, comprising:
+3. **Large-Scale Dataset**: We use **POI-Graph**, comprising:
    - 94.9 million co-visitation records
    - 45.3 million graph edges
    - 92,486 brands across 48 US states
